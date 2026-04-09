@@ -54,11 +54,13 @@ export default function Footer() {
           <div className="flex flex-col sm:flex-row gap-6 w-full pr-0 lg:pr-12">
             {/* Developer 1: Meet */}
             <div className="flex-1 flex flex-col group cursor-pointer">
-              <div className="w-full aspect-[4/5] rounded-xl overflow-hidden mb-4 relative bg-gray-900 border border-white/10 transition-transform duration-500 ease-out group-hover:-translate-y-2 group-hover:shadow-[0_20px_40px_rgba(0,0,0,0.5)]">
+              <div className="w-full mx-auto aspect-[3/4] sm:w-full sm:aspect-[4/5] rounded-xl overflow-hidden mb-4 relative bg-gray-900 border border-white/10 transition-transform duration-500 ease-out group-hover:-translate-y-2 group-hover:shadow-[0_20px_40px_rgba(0,0,0,0.5)]">
                 <div className="absolute inset-0 bg-gradient-to-br from-[#1A2540] to-[#0A0F1A] opacity-80" />
                 <div className="absolute top-0 right-0 w-full h-full bg-gradient-to-bl from-[#3b82f6]/30 to-transparent blur-3xl mix-blend-screen transition-opacity duration-500 group-hover:opacity-100 opacity-60" />
                 <div className="absolute inset-0 flex items-center justify-center">
-                  <span className="font-serif text-[10vw] sm:text-[6rem] lg:text-[7rem] font-medium text-white/5 transition-colors duration-500 group-hover:text-white/20 select-none">M</span>
+                  <span className="font-serif text-[18vw] sm:text-[5rem] lg:text-[7rem] font-medium text-white/5 transition-colors duration-500 group-hover:text-white/20 select-none">
+  M
+</span>
                 </div>
               </div>
               <div className="flex flex-col gap-1 px-1">
@@ -70,11 +72,13 @@ export default function Footer() {
 
             {/* Developer 2: Jash */}
             <div className="flex-1 flex flex-col group cursor-pointer">
-              <div className="w-full aspect-[4/5] rounded-xl overflow-hidden mb-4 relative bg-gray-900 border border-white/10 transition-transform duration-500 ease-out group-hover:-translate-y-2 group-hover:shadow-[0_20px_40px_rgba(0,0,0,0.5)]">
+              <div className="w-full mx-auto aspect-[3/4] sm:w-full sm:aspect-[4/5] rounded-xl overflow-hidden mb-4 relative bg-gray-900 border border-white/10 transition-transform duration-500 ease-out group-hover:-translate-y-2 group-hover:shadow-[0_20px_40px_rgba(0,0,0,0.5)]">
                 <div className="absolute inset-0 bg-gradient-to-br from-[#2E1A1A] to-[#120505] opacity-80" />
                 <div className="absolute top-0 right-0 w-full h-full bg-gradient-to-bl from-[#ef4444]/20 to-transparent blur-3xl mix-blend-screen transition-opacity duration-500 group-hover:opacity-100 opacity-50" />
                 <div className="absolute inset-0 flex items-center justify-center">
-                  <span className="font-serif text-[10vw] sm:text-[6rem] lg:text-[7rem] font-medium text-white/5 transition-colors duration-500 group-hover:text-white/20 select-none">J</span>
+                  <span className="font-serif text-[18vw] sm:text-[5rem] lg:text-[7rem] font-medium text-white/5 transition-colors duration-500 group-hover:text-white/20 select-none">
+  J
+</span>
                 </div>
               </div>
               <div className="flex flex-col gap-1 px-1">
