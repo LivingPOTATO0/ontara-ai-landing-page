@@ -51,43 +51,44 @@ export default function Footer() {
             </Link>
           </div>
 
-          <div className="flex flex-col sm:flex-row gap-6 w-full pr-0 lg:pr-12">
+          <div className="flex flex-col gap-4 w-full pr-0 lg:pr-12">
             {/* Developer 1: Meet */}
-            <div className="flex-1 flex flex-col group cursor-pointer">
-              <div className="w-full mx-auto aspect-[3/4] sm:w-full sm:aspect-[4/5] rounded-xl overflow-hidden mb-4 relative bg-gray-900 border border-white/10 transition-transform duration-500 ease-out group-hover:-translate-y-2 group-hover:shadow-[0_20px_40px_rgba(0,0,0,0.5)]">
-                <div className="absolute inset-0 bg-gradient-to-br from-[#1A2540] to-[#0A0F1A] opacity-80" />
-                <div className="absolute top-0 right-0 w-full h-full bg-gradient-to-bl from-[#3b82f6]/30 to-transparent blur-3xl mix-blend-screen transition-opacity duration-500 group-hover:opacity-100 opacity-60" />
-                <div className="absolute inset-0 flex items-center justify-center">
-                  <span className="font-serif text-[18vw] sm:text-[5rem] lg:text-[7rem] font-medium text-white/5 transition-colors duration-500 group-hover:text-white/20 select-none">
-  M
-</span>
-                </div>
+            <a
+              href="mailto:vmeet@gmail.com"
+              className="group flex items-center gap-5 px-5 py-4 rounded-2xl border border-white/10 hover:border-white/25 transition-all duration-300 hover:bg-white/[0.03]"
+            >
+              <div
+                className="shrink-0 w-12 h-12 rounded-full flex items-center justify-center text-lg font-semibold tracking-tight select-none"
+                style={{ background: 'linear-gradient(135deg, #1A2540 0%, #0A0F1A 100%)', border: '1px solid rgba(59,130,246,0.3)', color: '#93b4f5' }}
+              >
+                M
               </div>
-              <div className="flex flex-col gap-1 px-1">
-                <h3 className="text-base font-medium tracking-tight">Meet V.</h3>
-                <span className="text-[9px] uppercase tracking-widest text-white/40 mb-1">AI Architect</span>
-                <a href="mailto:vmeet@gmail.com" target="_blank" rel="noreferrer" className="text-[10px] text-white/70 uppercase tracking-wider font-mono hover:text-white transition-colors w-fit">vmeet@gmail.com</a>
+              <div className="flex flex-col min-w-0">
+                <span className="text-sm font-medium text-white tracking-tight">Meet</span>
+                <span className="text-[10px] uppercase tracking-widest text-white/35 mt-0.5">AI Architect</span>
+                <span className="text-[10px] font-mono text-white/50 mt-1 group-hover:text-white/80 transition-colors truncate">vmeet@gmail.com</span>
               </div>
-            </div>
+              <ArrowUpRightIcon className="w-3.5 h-3.5 ml-auto shrink-0 text-white/20 group-hover:text-white/60 transition-colors" />
+            </a>
 
             {/* Developer 2: Jash */}
-            <div className="flex-1 flex flex-col group cursor-pointer">
-              <div className="w-full mx-auto aspect-[3/4] sm:w-full sm:aspect-[4/5] rounded-xl overflow-hidden mb-4 relative bg-gray-900 border border-white/10 transition-transform duration-500 ease-out group-hover:-translate-y-2 group-hover:shadow-[0_20px_40px_rgba(0,0,0,0.5)]">
-                <div className="absolute inset-0 bg-gradient-to-br from-[#2E1A1A] to-[#120505] opacity-80" />
-                <div className="absolute top-0 right-0 w-full h-full bg-gradient-to-bl from-[#ef4444]/20 to-transparent blur-3xl mix-blend-screen transition-opacity duration-500 group-hover:opacity-100 opacity-50" />
-                <div className="absolute inset-0 flex items-center justify-center">
-                  <span className="font-serif text-[18vw] sm:text-[5rem] lg:text-[7rem] font-medium text-white/5 transition-colors duration-500 group-hover:text-white/20 select-none">
-  J
-</span>
-                </div>
+            <a
+              href="mailto:jashkevdiya@gmail.com"
+              className="group flex items-center gap-5 px-5 py-4 rounded-2xl border border-white/10 hover:border-white/25 transition-all duration-300 hover:bg-white/[0.03]"
+            >
+              <div
+                className="shrink-0 w-12 h-12 rounded-full flex items-center justify-center text-lg font-semibold tracking-tight select-none"
+                style={{ background: 'linear-gradient(135deg, #2E1A1A 0%, #120505 100%)', border: '1px solid rgba(239,68,68,0.25)', color: '#f4a4a4' }}
+              >
+                J
               </div>
-              <div className="flex flex-col gap-1 px-1">
-                <h3 className="text-base font-medium tracking-tight">Jash K.</h3>
-                <span className="text-[9px] uppercase tracking-widest text-white/40 mb-1">Lead Engineer</span>
-                <a href="mailto:jashkevdiya@gmail.com" target="_blank" rel="noreferrer" className="text-[10px] text-white/70 uppercase tracking-wider font-mono hover:text-white transition-colors w-fit">jashkevdiya@gmail.com</a>
+              <div className="flex flex-col min-w-0">
+                <span className="text-sm font-medium text-white tracking-tight">Jash</span>
+                <span className="text-[10px] uppercase tracking-widest text-white/35 mt-0.5">Lead Engineer</span>
+                <span className="text-[10px] font-mono text-white/50 mt-1 group-hover:text-white/80 transition-colors truncate">jashkevdiya@gmail.com</span>
               </div>
-            </div>
-            
+              <ArrowUpRightIcon className="w-3.5 h-3.5 ml-auto shrink-0 text-white/20 group-hover:text-white/60 transition-colors" />
+            </a>
           </div>
         </div>
 

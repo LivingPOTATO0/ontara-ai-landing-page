@@ -5,6 +5,7 @@ import { motion, AnimatePresence } from 'framer-motion';
 import ArrowRightIcon from '../ui/icons/ArrowRightIcon';
 
 const navLinks = [
+  { label: 'Home', path: '/' },
   { label: 'Services', path: '/services' },
   { label: 'Work', path: '/work' },
   { label: 'About', path: '/about' },
@@ -147,29 +148,32 @@ export default function Navbar() {
             className="fixed inset-0 z-[50] flex flex-col justify-center px-8"
             style={{ background: 'var(--navy)' }}
           >
-            <nav className="flex flex-col gap-6 mt-12 w-full max-w-[400px] mx-auto">
-              {[{ label: 'Home', path: '/' }, ...navLinks, { label: 'Contact', path: '/contact' }].map(({ label, path }, i) => (
+            <nav className="flex flex-col gap-1 mt-12 w-full max-w-[360px] mx-auto">
+              {[...navLinks, { label: 'Contact', path: '/contact' }].map(({ label, path }, i) => (
                 <motion.div
                   key={path}
-                  initial={{ opacity: 0, y: 30 }}
+                  initial={{ opacity: 0, y: 20 }}
                   animate={{ opacity: 1, y: 0 }}
-                  transition={{ delay: i * 0.07, duration: 0.4, ease: [0.16, 1, 0.3, 1] }}
-                  className="border-b border-white/5 pb-4"
+                  transition={{ delay: i * 0.06, duration: 0.35, ease: [0.16, 1, 0.3, 1] }}
                 >
                   <Link
                     to={path}
                     onClick={() => setMobileOpen(false)}
-                    className="font-sans text-4xl font-medium tracking-tight flex justify-between items-center group w-full"
-                    style={{ color: isActive(path) ? '#e5c07b' : 'white', textDecoration: 'none' }}
+                    className="flex justify-between items-center w-full px-3 py-3.5 rounded-xl group transition-colors duration-200"
+                    style={{
+                      color: isActive(path) ? '#e5c07b' : 'white',
+                      background: isActive(path) ? 'rgba(229,192,123,0.08)' : 'transparent',
+                      textDecoration: 'none',
+                    }}
                   >
-                    <span>{label}</span>
-                    <ArrowRightIcon className="w-6 h-6 opacity-0 group-hover:opacity-100 transition-opacity text-[#e5c07b]" />
+                    <span className="font-sans text-xl font-medium tracking-tight">{label}</span>
+                    <ArrowRightIcon className="w-4 h-4 opacity-0 group-hover:opacity-60 transition-opacity" style={{ color: '#e5c07b' }} />
                   </Link>
                 </motion.div>
               ))}
             </nav>
-            <div className="mt-16 flex justify-center pb-8 border-t border-white/10 pt-8 max-w-[400px] mx-auto w-full">
-              <a href="https://www.linkedin.com/company/ontaraai/posts/?feedView=all" target="_blank" rel="noreferrer" className="text-sm tracking-widest uppercase font-mono transition-colors" style={{ color: 'var(--muted)' }}>Connect on LinkedIn ↗</a>
+            <div className="mt-10 flex justify-center pb-6 border-t border-white/10 pt-6 max-w-[360px] mx-auto w-full">
+              <a href="https://www.linkedin.com/company/ontaraai/posts/?feedView=all" target="_blank" rel="noreferrer" className="text-xs tracking-widest uppercase font-mono transition-colors" style={{ color: 'var(--muted)' }}>Connect on LinkedIn ↗</a>
             </div>
           </motion.div>
         )}

@@ -108,7 +108,7 @@ export default function Contact() {
                         <span className="font-sans font-bold text-lg text-[#e5c07b]">MV</span>
                       </div>
                       <div>
-                        <p className="font-sans text-lg">Meet Virani</p>
+                        <p className="font-sans text-lg">Meet</p>
                         <p className="font-mono text-[10px] text-white/40 uppercase tracking-wider">AI/ML Engineer</p>
                       </div>
                     </div>

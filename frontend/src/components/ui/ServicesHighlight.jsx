@@ -25,14 +25,14 @@ const services = [
 
 export default function ServicesHighlight() {
   return (
-    <section className="dark-section py-32 md:py-48 px-6 md:px-12 w-full" style={{ background: '#000000', color: 'white' }}>
+    <section className="dark-section py-16 md:py-32 px-6 md:px-12 w-full" style={{ background: '#000000', color: 'white' }}>
       <div className="max-w-[1400px] mx-auto">
         
         {/* Header */}
-        <div className="mb-20 md:mb-32 flex flex-col md:flex-row md:items-end justify-between gap-10">
+        <div className="mb-10 md:mb-24 flex flex-col md:flex-row md:items-end justify-between gap-4 md:gap-10">
           <motion.h2 
             className="font-serif leading-tight font-medium w-full md:w-1/2"
-            style={{ fontSize: 'clamp(2rem, 8vw, 5rem)', tracking: '-0.02em', color: 'rgba(255,255,255,0.95)' }}
+            style={{ fontSize: 'clamp(1.75rem, 8vw, 5rem)', tracking: '-0.02em', color: 'rgba(255,255,255,0.95)' }}
             initial={{ opacity: 0, y: 30 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true, margin: "-100px" }}
@@ -41,7 +41,7 @@ export default function ServicesHighlight() {
             The problems<br />we solve.
           </motion.h2>
           <motion.p
-            className="text-base md:text-lg font-mono text-white/50 w-full md:w-1/3 leading-relaxed tracking-tight"
+            className="hidden md:block text-base md:text-lg font-mono text-white/50 w-full md:w-1/3 leading-relaxed tracking-tight"
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true, margin: "-100px" }}
@@ -51,33 +51,36 @@ export default function ServicesHighlight() {
           </motion.p>
         </div>
 
-        {/* Full-width Stacked List */}
         <div className="flex flex-col w-full border-t border-white/10">
             {services.map((service, index) => (
               <motion.div 
                 key={service.tag}
-                className="group relative flex flex-col lg:flex-row gap-6 lg:gap-12 py-12 lg:py-16 border-b border-white/10 hover:bg-white/[0.02] transition-colors duration-500 cursor-default px-4 -mx-4 rounded-xl"
+                className="group relative flex flex-col lg:flex-row gap-3 lg:gap-12 py-6 md:py-10 lg:py-16 border-b border-white/10 hover:bg-white/[0.02] transition-colors duration-500 cursor-default px-3 -mx-3 md:px-4 md:-mx-4 rounded-xl"
                 initial={{ opacity: 0, y: 20 }}
                 whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true, margin: "-100px" }}
-                transition={{ duration: 0.6, delay: index * 0.1, ease: [0.16, 1, 0.3, 1] }}
+                viewport={{ once: true, margin: "-80px" }}
+                transition={{ duration: 0.6, delay: index * 0.08, ease: [0.16, 1, 0.3, 1] }}
               >
-                {/* Tag Column */}
-                <div className="lg:w-[20%] shrink-0 flex flex-col justify-start pt-2">
-                  <span className="text-[10px] md:text-xs font-bold tracking-[0.2em] uppercase text-white/30 group-hover:text-white/80 transition-colors duration-500 font-mono">
+                {/* Tag + Title row on mobile, separate columns on lg */}
+                <div className="flex items-baseline gap-3 lg:w-[20%] lg:flex-col lg:gap-0 shrink-0">
+                  <span className="text-[9px] md:text-[10px] font-bold tracking-[0.2em] uppercase text-white/30 group-hover:text-white/60 transition-colors duration-500 font-mono whitespace-nowrap lg:pt-2">
                     0{index + 1} — {service.tag}
                   </span>
                 </div>
                 
-                {/* Title Column */}
+                {/* Title */}
                 <div className="lg:w-[40%] flex flex-col justify-start">
-                  <h3 className="text-2xl md:text-3xl lg:text-4xl font-medium tracking-tight text-white/80 font-serif leading-snug group-hover:text-white transition-colors duration-500">
+                  <h3 className="text-lg md:text-2xl lg:text-4xl font-medium tracking-tight text-white/80 font-serif leading-snug group-hover:text-white transition-colors duration-500">
                     {service.title}
                   </h3>
+                  {/* Description: visible inline on mobile below title, right column on lg */}
+                  <p className="lg:hidden mt-2 text-sm text-white/40 group-hover:text-white/70 transition-colors duration-500 leading-relaxed font-sans">
+                    {service.desc}
+                  </p>
                 </div>
 
-                {/* Desc Column */}
-                <div className="lg:w-[40%] flex flex-col justify-start pt-1 lg:pt-2">
+                {/* Desc Column — desktop only */}
+                <div className="hidden lg:flex lg:w-[40%] flex-col justify-start pt-1 lg:pt-2">
                   <p className="text-base md:text-lg text-white/50 group-hover:text-white/80 transition-colors duration-500 leading-relaxed font-sans max-w-xl">
                     {service.desc}
                   </p>

@@ -4,10 +4,10 @@ import ArrowUpRightIcon from '../components/ui/icons/ArrowUpRightIcon';
 
 const team = [
 {
-  name: 'Meet Virani',
+  name: 'Meet',
   role: 'AI Architect & Co-founder',
   bio: 'Leads AI system design and architecture, focusing on agent frameworks, LLM pipelines, and scalable system design. Specializes in turning complex AI capabilities into structured, production-ready architectures.',
-  initials: 'MV',
+  initials: 'M',
   glow: 'from-[#98c379] to-[#61afef]',
   link: 'https://www.linkedin.com/in/meet-virani/',
 },

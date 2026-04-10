@@ -129,10 +129,10 @@ export default function CardSlider() {
             ref={i === 0 ? cardRef : null} // Attach ref to the very first card to measure it
           >
             <div 
-              className="relative overflow-hidden rounded-[2rem] flex flex-col justify-between p-8 transition-all duration-500 hover:scale-[1.02] bg-[#0A0D14] border border-black/5 hover:border-[#e5c07b]/30 group/card"
+              className="relative overflow-hidden rounded-[2rem] flex flex-col justify-between p-6 md:p-8 transition-all duration-500 hover:scale-[1.02] bg-[#0A0D14] border border-black/5 hover:border-[#e5c07b]/30 group/card"
               style={{
-                width: 'clamp(300px, 25vw, 400px)',
-                height: 'clamp(380px, 35vh, 500px)',
+                width: 'clamp(220px, 60vw, 400px)',
+                height: 'clamp(280px, 45vw, 500px)',
                 boxShadow: '0 20px 50px rgba(0,0,0,0.08)'
               }}
             >
