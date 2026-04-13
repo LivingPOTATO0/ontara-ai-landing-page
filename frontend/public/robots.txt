@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://www.ontaraai.solutions/sitemap.xml
+Sitemap: https://ontaraai.solutions/sitemap.xml

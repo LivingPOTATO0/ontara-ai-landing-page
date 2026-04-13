@@ -64,7 +64,7 @@ export default function ServicesHighlight() {
                 {/* Tag + Title row on mobile, separate columns on lg */}
                 <div className="flex items-baseline gap-3 lg:w-[20%] lg:flex-col lg:gap-0 shrink-0">
                   <span className="text-[9px] md:text-[10px] font-bold tracking-[0.2em] uppercase text-white/30 group-hover:text-white/60 transition-colors duration-500 font-mono whitespace-nowrap lg:pt-2">
-                    0{index + 1} — {service.tag}
+                    0{index + 1} - {service.tag}
                   </span>
                 </div>
                 
